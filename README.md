@@ -11,3 +11,4 @@ The codes of Defining Cost Functions for Adaptive JPEG Steganography at the Micr
   year={2018},
   publisher={IEEE}
 }
+
