@@ -56,7 +56,7 @@ end
 padSize = max([size(F{1})'; size(F{2})']);
 
 %% add by chenkejiang for unsharpmask 
-C_SPATIAL_UM = UMA(C_SPATIAL,1);
+C_SPATIAL_UM = UMA_fun(C_SPATIAL,1);
 C_SPATIAL_PADDED_UM = padarray(C_SPATIAL_UM, [padSize padSize], 'symmetric'); % pad image
 RC_UM = cell(size(F));
 for i=1:numel(F)
