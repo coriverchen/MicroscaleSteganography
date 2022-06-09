@@ -96,7 +96,7 @@ for row = 1:k
             wavCoverStegoDiff = waveletImpact{fIndex, modRow, modCol};
             % compute suitability
            % tempXi{fIndex} = abs(wavCoverStegoDiff) ./ (abs(RC_sub)+(abs(RC_UM_sub)+1)^2+sgm);      
-            tempXi{fIndex} = abs(wavCoverStegoDiff) ./ (abs(RC_sub)+*max(abs(RC_sub),abs(RC_UM_sub))+sgm); 
+            tempXi{fIndex} = abs(wavCoverStegoDiff) ./ (abs(RC_sub)+max(abs(RC_sub),abs(RC_UM_sub))+sgm); 
         end
         rhoTemp = tempXi{1} + tempXi{2} + tempXi{3};
         rho(row, col) = sum(rhoTemp(:));
